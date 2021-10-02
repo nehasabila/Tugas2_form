@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    
+    
+
+   <p class="p"> <img class="logo" src="lamp.png" alt="">Calling for Volunteer</p>
+
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    
+ <div class="container">
+    <form action="Kirim.php" method="GET">
+        
+        <div id="header" class="header">Silahkan Isi Data Anda</div>
+    
+        <div class="table">
+    
+        <table>
+            <tr>
+                <td><label for="username">Username</label></td>
+                <td> : </td>
+                <td><input type="text" id="username" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td> : </td>
+                <td><input type="email" id="email" ></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td> : </td>
+                <td><input type="password" id="password" >
+                </td>
+            </tr>
+            <tr>
+                <td><label for="konfirmasi">Konfirmasi Password</label></td>
+                <td> : </td><td><input type="password" id="konfirmasi"></td>
+            </tr>
+            <tr>
+                <td><label for="nama">Nama Lengkap</label></td>
+                <td> : </td>
+                <td><input type="text" id="nama"></td>
+            </tr>
+            <tr>
+                <td><label for="tempatlahir">Tempat Lahir</label></td>
+                <td> : </td>
+                <td><input type="text" id="tempatlahir"></td>
+            </tr>
+            <tr>
+                <td><label for="tgl">Tanggal Lahir</label></td>
+                <td> : </td>
+                <td><input type="date" id="tgl"></td>
+            </tr>
+            <tr>
+                <td><label for="usia">Usia</label></td>
+                <td> : </td>
+                <td><input type="number" id="usia"></td>
+            </tr>
+            <tr>
+                <td><label for="no">No. Telepon</label></td>
+                <td> : </td>
+                <td><input type="text" id="no"></td>
+            </tr>
+            <tr>
+                <td><label for="agama">Agama</label></td>
+                <td> : </td>
+                <td>
+                    <div class="agama">
+                    <select name="agama" id="agama">
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Budha">Budha</option>
+                   </select>
+                   </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="gender">Jenis Kelamin</label></td>
+                <td> : </td>
+                <td><input type="radio" name="jeniskelamin" id="gender">Laki-Laki <input type="radio" name="jeniskelamin" id="gender">Perempuan</td>
+            </tr>
+            <tr>
+                <td><label for="Hobby">Hobby</label></td>
+                <td> : </td>
+                
+                <td>
+                    <div class="checkbox">
+                    <input type="checkbox">Membaca 
+                    <input type="checkbox">Menulis
+                    <br>
+                    <input type="checkbox">Melukis
+                    &ensp;<input type="checkbox">Traveling
+                    </div>
+                </td>  
+            </tr>
+            <tr>
+                <td><label for="alamat">Alamat</label></td>
+                <td> : </td>
+                <td>
+                    <div class="alamat">
+                    <textarea name="alamat" id="alamat" cols="20" rows="3" placeholder="Masukkan Alamat Lengkap"></textarea>
+                </div></td>
+            </tr>
+        </table>
+        </div>
+               <div align="center">
+               <td><button type="submit">Submit</button>&emsp;<button type="reset">Reset</button></td>
+        </div>
+    </form>
+    </div>
+
+    <div class="footer">
+       <marquee direction="right"><h4>Thanks for the participants!</h4></marquee>
+    </div>
+</body>
+</html>
